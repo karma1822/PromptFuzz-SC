@@ -1,0 +1,6 @@
+[
+  {
+    "class": "RepeatTailOp",
+    "params": { "tail": "(PLUGIN)", "count": 2 }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "class": "TemplateConcatOp",
+    "params": {
+      "template": "[场景]{scene} [目标]{goal} [限制]{constraint}",
+      "pieces": [
+        {"scene": "场景A", "goal": "目标X", "constraint": "限制1"},
+        {"scene": "场景B", "goal": "目标Y", "constraint": "限制2"}
+      ],
+      "use_input_as": "goal"
+    }
+  },
+  {
+    "class": "PrefixSuffixConcatOp",
+    "params": {
+      "prefixes": ["前缀1", "前缀2"],
+      "suffixes": ["后缀1", "后缀2"],
+      "joiner": " "
+    }
+  },
+  {
+    "class": "SegmentShuffleOp",
+    "params": {
+      "segments": ["段1", "段2", "段3", "段4"],
+      "min_k": 2,
+      "max_k": 3,
+      "include_input": true,
+      "joiner": " "
+    }
+  }
+]

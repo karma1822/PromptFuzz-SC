@@ -1,0 +1,18 @@
+# 快速启动 (Windows PowerShell)
+# 1. 创建虚拟环境并激活
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 设置 DeepSeek API（若使用真实 API）
+$env:DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
+$env:DEEPSEEK_MODEL = "deepseek-chat"
+$env:DEEPSEEK_API_KEY = "your api key"
+
+# 4. 运行演示脚本
+py scripts/web_panel.py
+
+# 可选：直接运行实验脚本
+# py scripts/run_experiment.py --budget 1000 --concurrency 8 --seed-file data/custom_prompts_template.csv
