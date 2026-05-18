@@ -69,9 +69,14 @@ python scripts\sweep_robustness.py --seed-file data/seeds_template.csv
 许可证：MIT（示例）
 
 项目声明：
+
 ·项目名称：PromptFuzz-SC: 语义-字符双空间变异的越狱攻击与评估工具（研究版）
+
 ·项目作者：Pan Xingjian
+
 ·作者单位：暨南大学网络空间安全学院
+
 ·开发语言：python
+
 ·核心技术：可插拔双空间变异算子库，三维量化评估可视化测试工具， ε-greedy + Hill-Climbing 搜索策略
 
